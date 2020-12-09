@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+/* root css ------------------------ */
+
 :root {
   --primary-color: #10b981;
 }
@@ -8,9 +10,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* container------------------------ */
+
 .container {
   padding: 1.4rem;
 }
+
+.container p {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.container-center {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+/* navigation----------------------- */
+
 .navigation {
   background-color: var(--primary-color);
   padding: 20px;
@@ -20,60 +38,96 @@ body {
 .nav-brand {
   font-weight: bold;
 }
-.link-active {
-  background-color: #147958;
+
+.nav-pills {
+  text-align: right;
 }
+
+/* list----------------------------- */
 
 .list-non-bullet {
   list-style: none;
 }
-.nav-pills {
-  text-align: right;
-}
-.link {
-  color: white;
-  text-decoration: none;
-}
+
 .list-item-inline {
   display: inline;
   padding: 3px;
 }
+/* links ----------------------------*/
 
-.container-center {
-  max-width: 600px;
-  margin: auto;
-}
 .link {
+  box-sizing: border-box;
   border-radius: 5px;
-  padding: 6px 10px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
 }
-.hero {
-  padding: 10% 10px 10px;
-}
-.hero-img {
-  display: block;
-  max-width: 500px;
-  width: 40%;
-  margin: auto;
-}
-.hero-heading {
-  text-align: center;
-  font-size: 3rem;
-  color: #4b5563;
-}
-.hero .hero-heading .heading-inverted {
-  color: var(--primary-color);
+
+.link-active {
+  background-color: #147958;
 }
 
 .link-primary {
   color: white;
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
-  text-decoration: none;
 }
+
 .link-secondary {
-  border: 1px solid rgb(160, 160, 255);
+  border: 1px solid rgb(15, 202, 121);
   --tw-text-opacity: 1;
-  color: rgba(59, 130, 246, var(--tw-text-opacity));
-  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* hero----------------------------- */
+
+.hero {
+  padding: 10% 10px 10px;
+}
+
+.hero-img {
+  display: block;
+  max-width: 500px;
+  width: 40%;
+  margin: auto;
+}
+
+.hero-heading {
+  text-align: center;
+  font-size: 3rem;
+  color: #4b5563;
+}
+
+.hero .hero-heading .heading-inverted {
+  color: var(--primary-color);
+}
+/* section--------------------------- */
+
+.section {
+  padding: 30px 0;
+}
+
+.ow {
+  background-color: #ecfdf5;
+}
+
+/* footer---------------------------- */
+
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  height: 10%;
+  text-align: center;
+  border-top-right-radius: 40px;
+}
+
+.footer-header {
+  padding: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.list-non-bullet {
+  list-style: none;
+  padding: 0 10px 20px 20px;
 }
